@@ -3,8 +3,12 @@ import ReactDOM from "react-dom";
 
 ReactDOM.render(
   <div>
-    <h1>Hello World!</h1>
-    <p>I am Rahavi</p>
+    <h1> My Favorites </h1>
+    <ul>
+      <li>Vanthiyathevan</li>
+      <li>Kundhavai</li>
+      <li>ArulMozhiVarman</li>
+    </ul>
   </div>,
   document.getElementById("root")
 );
