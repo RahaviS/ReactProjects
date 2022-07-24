@@ -1,27 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Heading from "./Heading";
+import ListItems from "./ListItems";
 
-var msg;
-const customStyle = {
-  color: ""
-};
-var time = new Date().getHours();
-
-if (time < 12) {
-  msg = "Good Morning";
-  customStyle.color = "red";
-} else if (time > 12 && time < 16) {
-  msg = "Good Afternoon";
-  customStyle.color = "Green";
-} else {
-  msg = "Good Evening";
-  customStyle.color = "blue";
-}
+const root = document.getElementById("root");
 
 ReactDOM.render(
-  <h1 className="heading" style={customStyle}>
-    {msg}
-  </h1>,
-
-  document.getElementById("root")
+  <div>
+    <Heading />
+    <ListItems />
+  </div>,
+  root
 );
