@@ -1,14 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Heading from "./Heading";
-import ListItems from "./ListItems";
+import App from "./Components/App";
 
-const root = document.getElementById("root");
-
-ReactDOM.render(
-  <div>
-    <Heading />
-    <ListItems />
-  </div>,
-  root
-);
+ReactDOM.render(<App />, document.getElementById("root"));
