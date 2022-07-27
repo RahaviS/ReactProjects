@@ -1,7 +1,14 @@
 import React from "react";
-import List from "./List";
+import Form from "./Form";
+
+var userIsRegistered = true;
 
 function App() {
-  return <List />;
+  return (
+    <div className="container">
+      <Form isRegistered={userIsRegistered} />
+    </div>
+  );
 }
+
 export default App;
